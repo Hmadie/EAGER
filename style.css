@@ -1,0 +1,540 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    background-color: white;
+}
+
+li {
+    list-style: none;
+
+}
+
+/*the bar sections*/
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+a:hover{
+    color: rgb(108, 184, 187);
+}
+
+
+
+header{
+
+    position: flex;
+
+
+
+    padding: 3rem 2rem;
+
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    color: white;
+    max-width: 1200PX;
+    display: flex;
+    margin: 0 auto;
+
+    margin-left: auto ;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -40px;
+
+    
+
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+    margin-left: 6rem;
+    
+}
+
+
+/*-------------for animation-----------------*/
+.navbar .links li{
+  
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar .links li:hover{
+
+    font-size: 20px;
+    scale: 1.05;
+}
+    
+
+
+.navbar .toggle_btn{
+    font-size: 2rem;
+    cursor: pointer;
+    display:none;
+
+}
+
+/*action button*/
+.action_btn{
+    background-color: rgb(108, 184, 187) ;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 3rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.action_btn:hover{
+    scale: 1.05;
+    font-size: 16px;
+    color: white;
+    background-color: crimson;
+}
+.action_btn:active{
+    scale: 0.95;
+}
+
+/*menu drop down*/
+.dropdown_menu{
+    font-size: 20px;
+    font-weight: 600;
+    position: inherit;        
+    right: 3rem;
+    width: 300px;
+    top: 150px;
+    height: 0;
+    background: rgb(241, 234, 234);
+    backdrop-filter: blur(15px);
+    
+
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+
+}
+
+.dropdown_menu.open{
+    height: 460px;
+}
+.dropdown_menu li{
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+
+
+
+/*<<<<<<<<<<<<<<            sections for first page                  >>>>>>>>>....*/
+
+
+/*           DON'T TOUCH !!!!!!              */
+section{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: flex;
+    margin-top: 8rem;
+
+
+
+}
+
+
+
+/* ------   sliders    ------*/
+section#Home .slider{
+    min-height: 35vh;
+    margin: 5rem;
+    position: relative ;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+}
+
+
+section#Home .slider-track{
+    display: flex;
+    width :calc(250px * 10 ) ;
+    animation: scroll 40s linear infinite;
+
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0) ;
+
+    }
+    100%{
+        transform: translateX(calc(-250px * 9)) ;
+
+    }
+
+}
+section#Home .slider-track:hover{
+    animation-play-state: paused;
+}
+
+
+section#Home .slide{
+    height: 350px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+
+    padding: 15px;
+    perspective: 100px;
+}
+section#Home .slide img {
+    width: 100%;
+    height: 60%;
+    transition: transform 3s;
+
+}
+section#Home .slide img:hover{
+    transform: translateZ(20px);
+}
+
+
+section#Home .slider::before,
+section#Home .slider::after{
+    background: linear-gradient(to right, rgba(225,225,225,1)0%, rgb(225,225,225,0)100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+
+}
+section#Home .slider::before{
+    left: 0;
+    top: 0;
+}
+section#Home .slider::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+
+}
+
+/*------------       end of slides        ------------*/   
+
+
+.text {
+    width: 90%;
+    color: rgb(3, 104, 255);
+    position: absolute;
+    top: 20%;
+    left: 3rem;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.text p{
+    font-size: 18px;
+    color:black;
+    text-align: center;
+    margin: 10px 0 40px;
+}
+
+
+.text h1{
+    font-size: 18px;
+    margin-top: 7rem;
+    margin-bottom: -3rem;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+
+.text h4{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-top: 5rem;
+    font-weight: bold;
+    font-style: italic;
+    
+    position: relative;
+
+}
+
+
+
+/*   -----------------                  end of sections for first page                 ---------------*/
+
+
+
+
+
+
+
+/* --------                       Services_Section in another page!!!!!!!!!!!!!!           ---------->*/
+
+#Services_Section h4{
+    color: rgb(0, 156, 156);
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px 0 40px;
+}
+
+/*  ------------               end of section for service/*
+
+
+
+
+
+
+/*-------                 section for get in touch       -------   */
+
+
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    
+}
+
+.container{
+    position: fixed;
+    width: 400px;
+    height: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgb(255, 255, 255);
+    
+}
+
+.container h2{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.container .input-box{
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+    border-bottom: 2px solid white ;
+
+}
+.container .input-box label{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 5px;
+    font-size: 17px;
+    pointer-events: none;
+    transition: 0.3s;
+
+}
+.container .input-box textarea,
+.container .input-box input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    color: white;
+    outline: none;
+
+}
+.container .input-box textarea{
+    padding: 10px 0;
+    resize: none;
+}
+
+.container .input-box textarea:focus ~ label,
+.container .input-box textarea:valid ~ label,
+
+.container .input-box input:valid ~ label,
+.container .input-box input:focus ~ label{
+    top: -15px;
+
+}
+
+
+
+
+
+
+
+
+.bookbtn{
+    width: 100%;
+    height: 40px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: rgb(5, 222, 255) ;
+    margin-top: 5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.bookbtn:hover{
+    scale: 1.05;
+    font-size: 16px;
+    color: white;
+    background-color: crimson;
+}
+.bookbtn:active{
+    scale: 0.95;
+
+}
+
+/* --------      END OF GET IN TOUCH    - -----------*/
+
+
+
+
+
+
+
+
+#intro {
+    background-color: aqua;
+    min-height: 100vh;
+    width: 90%;
+    margin: auto;
+    position: flex;
+    text-align: center;
+    padding-top: 50%;
+    margin-top: 10%;
+}
+.intro h1{
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*<<<<<<<<<<<<<<<<              media            >>>>>>>>>>>*/
+
+@media(max-width:992px) {
+    .navbar .links,
+    .navbar .action_btn
+    {
+        display: none;
+    }
+   
+    .navbar .toggle_btn{
+        display: block;
+        margin-left: auto;
+    }
+
+    .dropdown_menu{
+        display: block;
+
+    }
+    section#Home #front{
+        margin-top: -15rem;
+    }
+    section#Home #front h1{
+        font-size: 20PX;
+    }
+    .text{
+        position: inherit;
+    }
+    section{
+        margin: -3rem;
+        width: 100%;
+
+    }
+ 
+    .text {
+        margin-left: 2rem;
+        margin-bottom: 5rem;
+    }
+    section#Home .slider{
+        margin-left: 3rem ;
+        margin-right: -3rem;
+        
+    }
+}
+@media(max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+   
+    
+  
+   
+}
+

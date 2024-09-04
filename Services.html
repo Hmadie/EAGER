@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"   >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ImEager</title>
+
+</head>
+<body>
+
+
+
+    <header class="header">
+        <!--logo only-->
+        <a href="#" class="logo"><img src="images/logo.jpg" alt="" width="180" height="50"></a>
+
+        <div class="navbar">
+
+            <ul class="links">
+                <li><a href="index.html" class="active">Home</a></li>
+
+               <!---- <li><a href="#Services">Services</a></li>      ---->
+               <li> <a href="Services.html">Services</a> </li>
+
+                <li><a href="#Packages">Packages</a></li>
+                <li><a href="#Ourgoal">Our goal</a></li>
+
+            </ul>
+            <a href="#" class="action_btn">Get a quote now</a>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars fa-beat-fade" style="color: #000000;"></i> 
+             </div>
+        </div>
+
+
+
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li> <a href="Services.html">Services</a> </li>
+            <li><a href="#Packages">Packages</a></li>
+            <li><a href="#Ourgoal">Our goal</a></li>
+            <li><a href="#" class="action_btn">Get a quote now</a></li>
+
+         </div>
+
+</header>
+
+
+
+
+<!-----                    sections           -->
+
+
+<section id="Services_Section">
+    <div class="Home">
+        <h4>
+            Our remarkable services that will make your business marketting attractive
+        </h4>
+
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    const toggle_Btn=document.querySelector('.toggle_btn')
+    const toggle_btnIcon=document.querySelector('.toggle_btn i')
+    const dropDown_Menu=document.querySelector('.dropdown_menu')
+
+    toggle_Btn.onclick=function(){
+        dropDown_Menu.classList.toggle('open')
+        const isOpen=dropDown_Menu.classList.contains('open')
+
+        toggle_btnIcon.classList=isOpen
+        ? 'fa-solid fa-xmark fa-beat-fade" style="color: #000000;'
+        : 'fa-solid fa-bars fa-beat-fade" style="color: #000000;'
+    }
+</script>
+
+</body>
+</html>
+
+
