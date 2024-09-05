@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"   >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ImEager</title>
+
+</head>
+<body>
+
+
+
+    <header class="header">
+        <!--logo only-->
+        <a href="#" class="logo"><img src="images/logo.jpg" alt="" width="180" height="50"></a>
+
+        <div class="navbar">
+
+            <ul class="links">
+                <li><a href="index.html" class="active">Home</a></li>
+
+               <!---- <li><a href="#Services">Services</a></li>      ---->
+               <li> <a href="Services.html">Services</a> </li>
+
+                <li><a href="#Packages">Packages</a></li>
+                <li><a href="#Ourgoal">Our goal</a></li>
+
+            </ul>
+            <a href="book.html" class="action_btn">Get a quote now</a>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars fa-beat-fade" style="color: #000000;"></i> 
+             </div>
+        </div>
+
+
+
+
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li> <a href="Services.html">Services</a> </li>
+            <li><a href="#Packages">Packages</a></li>
+            <li><a href="#Ourgoal">Our goal</a></li>
+            <li><a href="book.html" class="action_btn">Get a quote now</a></li>
+
+        </div>
+
+    </header>
+
+
+            
+
+
+
+        <!--------         sections                 -->
+
+    <div  class="text">
+        <h3> Digital Marketing and Sales Solutions for <span style="color: rgb(0, 195, 202)"> Small Business Growth</span> </h3>
+        <p> Unleash the Power of marketing and Explore Our Unique Services Crafted to <span style="color: rgb(0, 138, 80);"> Exceed Your Expectations!</style></span> </p>
+
+        <!---- <h4> "Our specialized services are designed to empower and drive success for the following businesses" </h4>   ---->
+           
+        
+    </div>
+
+<section id="section_wrapper">
+
+    <div class="wrapper">
+        <img src="images/robot.png" alt="">
+
+        <div class="text-box">
+            <h1> "Unlock new levels of success with our proven expertise, driving your business growth to new heights"</h1>
+        </div>
+        
+
+    </div>
+
+</section>
+    
+
+<!------------------------- end of robot        -------------->
+
+
+<div class="introtobusiness">
+    <h1>Accelerating Growth for Emerging and Evolving Businesses <span style="color: darkgreen;">across These Industries! </span></h1>
+</div>
+<!--------------      sections after    robot    -->
+<section id="business">
+   
+    <div class="container2">
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/coffee.jpg " >
+            </div>
+            <div class="content">
+                <h2>Coffee Shop</h2>
+                <p>Transforming Coffee Shops with Proven Growth Strategies to Drive Sales and Customer Loyalty</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/restaurant.jpg" >
+            </div>
+            <div class="content">
+                <h2>Restaurant</h2>
+                <p>Transform Your Restaurant’s Future with Our Tailored Strategies—We’re Dedicated to Driving Your Growth and Maximizing Your Success</p>
+            </div>
+        </div>
+
+    
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/sweets.jpg" >
+            </div>
+            <div class="content">
+                <h2>Sweets Shop</h2>
+                <p>Transforming Sweets Shops with Creative Growth Strategies to Skyrocket Sales and Enchant Customers</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/icecream.jpg" >
+            </div>
+            <div class="content">
+                <h2>Ice Cream Shop</h2>
+                <p>Sweeten Your Ice Cream Shop’s Success with Our Innovative Strategies—We’re Here to Help You Scoop Up More Growth and Delight Your Customer</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="images/drinks.jpg" >
+            </div>
+            <div class="content">
+                <h2>Drinks Shop</h2>
+                <p>Refresh Your Drinks Shop’s Potential with Our Dynamic Strategies—We’re Here to Elevate Your Growth and Captivate Your Customers</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+</section>
+  
+
+        
+
+        
+
+
+        
+<!-----
+<section id="Services">
+</section>
+
+
+<section id="packages">
+</section>
+
+
+<section id="Ourgoal">
+</section>
+
+
+<section id="action_btn">
+</section>
+
+---->
+
+
+            
+
+
+
+    
+                
+            
+
+        
+            
+
+
+
+
+
+
+
+
+        <script>
+            const toggle_Btn=document.querySelector('.toggle_btn')
+            const toggle_btnIcon=document.querySelector('.toggle_btn i')
+            const dropDown_Menu=document.querySelector('.dropdown_menu')
+
+            toggle_Btn.onclick=function(){
+                dropDown_Menu.classList.toggle('open')
+                const isOpen=dropDown_Menu.classList.contains('open')
+
+                toggle_btnIcon.classList=isOpen
+                ? 'fa-solid fa-xmark fa-beat-fade" style="color: #000000;'
+                : 'fa-solid fa-bars fa-beat-fade" style="color: #000000;'
+            }    
+        </script>    
+            
+        
+
+
+
+        
+
+
+
+    
+
+
+
+</body>
+</html>
