@@ -12,6 +12,11 @@ body{
     background-color: white;
 }
 
+
+
+
+
+
 li {
     list-style: none;
 
@@ -32,9 +37,6 @@ a:hover{
 header{
 
     position: flex;
-
-
-
     padding: 3rem 2rem;
 
 }
@@ -151,6 +153,7 @@ header{
 
 html{
     scroll-behavior: smooth;
+    height: 100%;
     
 }
 
@@ -332,25 +335,35 @@ section{
 
 
 .bookbtn{
-    width: 100%;
-    height: 40px;
-    color: white;
+    width: 80%;
+    height: 60px;
+
+    margin-left: 2rem;
+
+    color: black;
     border: none;
     outline: none;
-    border-radius: 50px;
+    border-radius: 30px;
     cursor: pointer;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     background-color: rgb(5, 222, 255) ;
     margin-top: 5rem;
+    letter-spacing: 3px;
     cursor: pointer;
     transition: 0.3s;
 }
 .bookbtn:hover{
     scale: 1.05;
-    font-size: 16px;
+    font-size: 25px;
+
+
+
+    background: rgb(119, 4, 4);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px rgb(119, 4, 4);
     color: white;
-    background-color: crimson;
+    font-weight: 600;
 }
 .bookbtn:active{
     scale: 0.95;
@@ -495,24 +508,710 @@ section#business .container2 .card:hover .content h2{
 section#business .container2 .card:hover .content p{
     font-style: italic;
 }
+/*------------/---------------------------------------------------*/
+
+
+
+
+/*----------- btn for consultaion---------------------*/
+section#btnsection{
+    width: 100%;
+    height:60vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10rem;
+
+
+}
+
+section#btnsection .adbtn{
+    background-color: rgb(108, 184, 187) ;
+    color: rgb(255, 255, 255);
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 2rem;
+    
+}
+section#btnsection .adbtn:hover{
+    scale: 1.05;
+    font-size: 16px;
+    color: white;
+    background-color: crimson;
+}
+section#btnsection .adbtn:active{
+    scale: 0.95;
+}
+/*        end of btn for consultation            */
+
+
+/* --------------       ad text for asking to consult       */
+section#adtext{
+    width: 90%;
+    height: 60vh;
+    margin-top: 10rem;
+
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+section#adtext .textbox{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%) ;
+}
+section#adtext .textbox h1{
+    font-size: 40px;
+}
+section#adtext .textbox p{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    font-size: 20px;
+}
+/* ------------------------------------*/
+
+section#special_offers{
+    width: 90%;
+    height: 60vh;
+    text-align: center;
+    justify-content: center;  
+    display: flex;
+    position: relative;
+    margin-top: -10rem;
+}
+section#special_offers .textbox2{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%) ;
+    margin-left: 2rem
+
+}
+section#special_offers .textbox2 h1{
+    color: rgb(26, 111, 145);
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    text-align: left;
+    font-size: 30px;
+    align-items: flex-start;
+    padding-bottom: 15px;
+    border-bottom: 3px solid green;
+    border-top: 3px solid green;
+}
+
+section#special_offers .textbox2 p{
+    margin-top: 3rem;
+    background-color: rgb(46, 104, 104);
+    border-radius: 20px;
+    font-weight: 450;
+    
+    color: rgb(255, 255, 255);
+    padding: 10px;
+
+}
+/******* --------------     end of special offers intro --------*/
+
+/* ------- so special section -------*/
+section#sospecial{
+    height: 40vh;
+    width: 90%;
+    position: relative;
+   
+
+}
+
+
+/*web--*/
+section#sospecial .web{
+
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    text-wrap: wrap;
+}
+
+
+.webimg{
+    float: left;
+    width: 30%;
+    margin-top: -7rem;
+
+}
+section#sospecial .web h1{
+
+    display:inline-block;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(9, 199, 247);
+    margin-left: 2rem;
+}
+section#sospecial .web p{
+    
+
+
+
+    margin-top: 2rem;
+    margin-left: 28%;
+    background-color: rgb(46, 104, 104);
+    border-radius: 20px;
+    font-weight: 450;
+    
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 20px;
 
 
 
 
 
+    background-color: rgb(46, 104, 104);
+    border-radius: 20px;
+    font-weight: 450;
+    
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+/*end of web*/
+
+
+
+section#sospecial2{
+    height: 30vh;
+    width: 90%;
+    position: relative;
+    text-wrap: wrap;
+   
+
+}
+
+section#sospecial2 .film{
+    margin-top: -400px;
+
+
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    text-wrap: wrap;
+
+}
+
+
+ .filmimg{
+    float: left;
+    width: 30%;
+    margin-top: -7rem;
+    
+
+}
+section#sospecial2 .film h2{
+    
+
+    display:inline-block;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(9, 199, 247);
+    margin-left: 1rem;
+}
+section#sospecial2 .film p{
+    margin-top: 2rem;
+    margin-left: 28%;
+    font-size: 20px;
+    background-color: rgb(46, 104, 104);
+    border-radius: 20px;
+    font-weight: 450;
+    
+    color: rgb(255, 255, 255);
+    padding: 20px;
+
+
+
+
+    background-color: rgb(46, 104, 104);
+    border-radius: 20px;
+    font-weight: 450;
+    
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    
+
+}
+/* end of special 2     -----*/
+
+
+
+/*************************************************/
+section#sospecial3{
+    height: 30vh;
+    width: 70%;
+    position: relative;
+    text-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+section#sospecial3 .appl{
+    margin-top: -65%;
+    margin-left: 2rem;
+  
+
+
+}
+.applimg{
+    float: left;
+    width: 20%;
+    margin-left: 7rem;
+
+    margin-top: -5rem;
+
+}
+section#sospecial3 h3{
+    
+    display:inline-block;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(9, 199, 247);
+    margin-left: 10rem;
+
+}
+section#sospecial3 p{
+    margin-top: 2rem;
+    margin-left: 40%;
+    background-color: rgb(46, 104, 104);
+    border-radius: 20px;
+    font-weight: 450;
+    font-size: 20px;
+
+    
+    color: rgb(255, 255, 255);
+    padding: 10px;
+
+}
+/*----------------------end of special services---------------------------*/
+
+
+section#Sbtnsection{
+
+    height: 30vh;
+    width:50% ;
+    text-align: center;
+    margin-top: 2rem;
+    display: inline-block;
+    position: flex;
+    /*left: 50%;*/
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    margin-bottom: -20rem;
+
+}
+section#Sbtnsection h1{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    
+}
+section#Sbtnsection .btn2{
+    display: inline-block;
+    margin-top: 7%;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    position: relative;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 25px;
+    letter-spacing: 0.1em;
+    padding: 10PX 30px;
+    background-color: antiquewhite;
+    transition: 0.5s;
+}
+section#Sbtnsection .btn2:hover{
+    background: rgb(126, 224, 231);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px rgb(126, 224, 231);
+
+}
+/******************************************************/
+
+/*----------tailored packages---------*/
+section#pagepackages{
+    display: inline-block;
+    margin-top: -80%;
+    margin-left: 150px;
+    width: 80%;
+    text-align: center;  
+    
+    
+}
+section#pagepackages h1{
+    font-size: 35px;
+}
+section#pagepackages p{
+    padding-top: 25px;
+    font-style: italic;
+}
+/**********************************************/
+
+
+
+/*------------------packages-------------------*/
+
+
+section#packages{
+    background-color: antiquewhite;
+    border-radius: 250px;
+    padding: 80px 80px;
+    margin-top: -20%;
+}
+
+section#packages .grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 0px;
+    padding: 20px;
+}
+
+section#packages .grid .box{
+    width: 350px;
+    border: 1px solid #eee ;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px 5px rgba(0,0,0,0.05);
+
+}
+section#packages .grid .box .title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: rgb(35, 104, 58);
+    letter-spacing: 2px;
+
+}
+section#packages .grid .box .price{
+    margin-bottom: 25px;
+
+}
+section#packages .grid .box .price b{
+    display: block;
+    font-size: 40px;
+    margin-top: -5px;
+}
+
+section#packages .grid .box .features >*{
+    color: #292e2e;
+    padding: 9px 0px;
+    text-align: left;
+    margin-left: 2rem;
+    border-bottom: 1px solid rgb(14, 36, 20);
+
+
+}
+
+section#packages .grid .box .btn button{
+    width: 50%;
+    margin:25px 0px 0px;
+    padding: 10px;
+    background: #73e4e4;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+section#packages .grid .box .btn button:hover{
+    background: rgb(119, 4, 4);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px rgb(119, 4, 4);
+    color: white;
+    font-weight: 600;
+
+}
+
+
+
+section#packages .grid .box.PREMIUM{
+    transform: scale(1.1);
+    background: #73e4e4;
+}
+section#packages .grid .box.PREMIUM .title{
+    color:
+    white ;
+}
+section#packages .grid .box.PREMIUM .price{
+    color: white;
+
+}
+
+section#packages .grid .box.PREMIUM .features >*{
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(10, 99, 22);
+
+}
+section#packages .grid .box.PREMIUM .btn button{
+    background: #eee;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    
+}
+section#packages .grid .box.PREMIUM .btn button:hover{
+    background: rgb(114, 18, 18);
+    color: #fff;
+
+
+}
+/***************************************--------------------------------*/
+
+
+section#freecons{
+    height: 60vh;
+
+    margin-top: 10%;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,10%);
+    
+
+    
+
+}
+section#freecons h1{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    color: #185732;
+
+
+}
+section#freecons p{
+    padding-top: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+section#freecons .consbtn button{
+    width: 30%;
+    margin:25px 0px 10rem;      /*for spacing around the item*/
+    padding: 20px;
+    background: #73e4e4;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+section#freecons .consbtn button:hover{
+    background: rgb(119, 4, 4);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px rgb(119, 4, 4);
+    color: white;
+    font-weight: 600;
+
+}
+
+section#freecons .consbtn {    /*-----for border only----*/
+    padding-top: 20px;
+    border-bottom: 7px solid rgb(20, 92, 39);
+
+}
+
+
+/*------------location------*/
+section#location{
+    margin-top: 800px;
+    height: 60vh;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,10%);
+   
+}
+section#location h1{
+    font-size: 40px;
+    color: #176130;
+    
+}
+section#location .grid2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px 50px;
+    padding: 80px;
+    
+}
+section#location .grid2 .box2{
+    width: 550px;
+    border: 1px solid #eee ;
+    padding: 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px 5px rgba(0,0,0,0.05);
+
+}
+section#location .grid2 .box2 .title2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: rgb(5, 151, 156);
+    letter-spacing: 2px;
+
+}
+section#location .grid2 .box2 .infoo >*{
+    color: #000000;
+    padding: 40px 20px;
+    text-align: left;
+    font-weight: 500;
+    border-bottom: 1px solid rgb(5, 83, 26);
+
+}
+
+
+
+/*----social media-----*/
+section#location .grid2 .box2 .title2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: rgb(5, 151, 156);
+    letter-spacing: 2px;
+
+}
+section#location .grid2 .box2 .infooo >*{
+    padding: 20px 20px;
+    font-size: 35px;
+    text-align: left;
+
+}
+section#location .btn5 button{
+    width: 30%;
+    margin:25px 0px 10rem;      
+    padding: 20px;
+    background: #73e4e4;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    margin-bottom: auto;
+
+
+}
+section#location .btn5 button:hover{
+    background: rgb(119, 4, 4);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px rgb(119, 4, 4);
+    color: white;
+    font-weight: 600;
+    width: 50%;
+
+}
+
+/*///////////////end of page/////////////////////-*/
 
 
 
 
 
+/*     foooter-*********/
+.end{
+    margin-top: 2200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    
+    background: linear-gradient(to right, rgb(114, 190, 204),rgb(235, 215, 106));
 
 
 
 
 
+    position: relative;
+    width: 100%;
+    padding: 30px 30px;
+    flex-direction: column;
+}
+.end .social-icons, .end .menu, .policy{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+
+}
+
+
+.end .social-icons li, .end .menu li, .policy{
+    list-style: none;
+}
+.end .social-icons li a{
+    font-size: 2em;
+    color:rgb(0, 0, 0) ;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 1s;
+
+}
+.end .social-icons li a:hover{
+    color: rgb(31, 200, 223);
+    box-shadow: 0 0 50px rgb(191, 248, 252);
+    letter-spacing: 3px;
+
+
+}
+
+
+.end .menu li a{
+    font-size: 20px;
+    margin: 0 20px;
+    display: inline-block;
+    opacity: 0.75;
+    transition: 1s;
+
+}
+.end .menu li a:hover{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    box-shadow: 0 0 30px rgb(5, 107, 114);
+    letter-spacing: 2px;
+
+
+}
 
 
 
+.end p{
+    color: #000000;
+    text-align:center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    opacity: 0.75;
+    font-size: 1.2em;
+}
 
 
 
@@ -587,19 +1286,252 @@ section#business .container2 .card:hover .content p{
         margin: 60px 10px;
 
     }
-    
-    
+    section#adtext{
+        top: 30%;
+    }
+    section#btnsection{
+        top: 60%;
+    }
+    .container{
+        width: 60%;
+        height: 80%;
+
+    }
+    section#adtext .textbox p{
+        font-size: 18px;
+        width: 100%;
+        text-align:left;
+
+    }
+
+
+
+    section#special_offers{
+        top: 90%;
+        text-align: left;
+
+
+    }
+    section#special_offers .textbox2{
+        width: 100%;
+        margin-top: -15rem;
+
+    }
+
+    section#special_offers h1{
+        font-size: 22px;
+        margin-left: 4rem;
+
+    }
+    section#special_offers p{
+        margin-left: 4rem;
+        
+
+    }
+
+    /*so special*/
+
+    section#sospecial{
+        height: 60vh;
+        top: 80%;
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+    section#sospecial .webimg{
+        width: 90%;
+    }
+
+    section#sospecial .web {
+        position: flex;
+        width: 90%;
+        margin: 15px;
+
+    }
+    section#sospecial .web p{
+        
+
+
+        font-size: 18px;
+
+        width: 90%;
+        margin-left: 2rem;
+        
+    }
+
+   
+
+
+    /*-----------------------------*/
+
+
+    section#sospecial2{
+        height: 60vh;
+        top: 60%;
+        width: 80%;
+        margin-top: 20rem;
+        margin-left: 2rem;
+    }
+    section#sospecial2 .filmimg{
+        width: 90%;
+    }
+
+    section#sospecial2 .film {
+        position: flex;
+        width: 80%;
+        margin: 15px;
+        margin-top: auto;
+    }
+    section#sospecial2 .film p{
+        font-size: 18px;
+
+        width: 100%;
+        margin-left: 2rem;
+    }
 
     
+
+    /*-----------------------------------*/
+
+    section#sospecial3{
+        top: 100%;
+    }
+    section#sospecial3 .applimg{
+        width: 40%;
+        margin-left: 40%;
+
+    }
+    section#sospecial3 .appl{
+        margin-left: 25%;
+    }
+    section#sospecial3 .appl p{
+        font-size: 18px;
+        width: 80%;
+        margin-left: 7rem;
+    }
+    section#Sbtnsection{
+        position: flex;
+        
+        
+        top: auto;
+        margin-top: 1200px;
+        margin-left: 1rem;
+        width: 50%;
+        margin-left: 50%;
+    
+        
+    }
+    section#Sbtnsection .btn2{
+        font-size: 20px;
+        padding: 15px 35px;
+    }
+
+
+    section#pagepackages{
+        width: 80%;
+        margin-left: 3rem;
+    }
+    /*-----*/
+
+
+    section#packages{
+        margin-left: 2rem;
+        width:90% ;
+    }
+    section#packages .grid{
+        gap: 7rem;
+    }
+
+
+    /*-------------------------*/
+
+
+
+    section#freecons{
+        margin-left:auto
+    }
+
+
+
+    section#location{
+        width: 80%;
+        margin-left: auto;
+    }
+
+
+    section#location .grid2 .box2 .infoo >*{
+        padding: 50px;
+    }
+    section#location .grid2 .box2.socialmedia{
+        
+        width: 100%;
+        
+      
+
+
+    }
+ 
+    section#location .btn5 button{
+        width: 60%;
+    }
+    section#location .btn5 button:hover{
+        width: 100%;
+    }
+
+
+
+
+
+    .end{
+        top:30% ;
+        width: 100%;
+        margin-left: 0;
+        
+       
+        
+
+    }
+
+    .end .social-icons{
+
+        width: 90%;
+        padding: 15px;
+    }
+
+    .end .menu{
+        width: 20%;
+        margin: auto;
+        padding: 50px 0 auto;
+        justify-content: space-around;
+        margin-left: 25%;
+        
+    }
+    .end .menu li{
+        padding:10px 5px ;
+        
+
+
+    }
+
+
+
+
+   
+   
+
+
+
+
 }
+
 @media(max-width: 576px){
     .dropdown_menu{
         left: 2rem;
         width: unset;
     }
+}
+    
+
    
     
   
    
-}
-
