@@ -1212,6 +1212,10 @@ section#location .btn5 button:hover{
     opacity: 0.75;
     font-size: 1.2em;
 }
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+/*       <<<<<        services     >>>>                       -*
 
 
 
@@ -1314,17 +1318,19 @@ section#location .btn5 button:hover{
     }
     section#special_offers .textbox2{
         width: 100%;
-        margin-top: -15rem;
+        margin-top: -5rem;
 
     }
 
     section#special_offers h1{
-        font-size: 22px;
+        font-size: 15px;
         margin-left: 4rem;
 
     }
     section#special_offers p{
         margin-left: 4rem;
+        margin-bottom: 200px;
+
         
 
     }
@@ -1334,7 +1340,7 @@ section#location .btn5 button:hover{
     section#sospecial{
         height: 60vh;
         top: 80%;
-        margin-top: 3rem;
+        margin-top: 15rem;
         margin-left: 2rem;
     }
     section#sospecial .webimg{
@@ -1459,12 +1465,11 @@ section#location .btn5 button:hover{
 
 
     section#location .grid2 .box2 .infoo >*{
-        padding: 50px;
+        padding: 50px ;
     }
     section#location .grid2 .box2.socialmedia{
         
         width: 100%;
-        
       
 
 
@@ -1482,7 +1487,7 @@ section#location .btn5 button:hover{
 
 
     .end{
-        top:30% ;
+        top:50% ;
         width: 100%;
         margin-left: 0;
         
@@ -1494,7 +1499,7 @@ section#location .btn5 button:hover{
     .end .social-icons{
 
         width: 90%;
-        padding: 15px;
+        
     }
 
     .end .menu{
